@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reshmi - Developer Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+                *{
+                        margin: 0;
+                        padding: 0;
+                }
+                body{
+                        background-color: rgb(0, 0, 34);
+                        color:white;
+                        font-family: 'Poppins', sans-serif;
+                }
+                nav{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 80px;
+                        background-color: rgb(19, 19, 75);
+                }
+                nav ul{
+                        display: flex;
+                        justify-content:center;
+                }
+                nav ul li{
+                        list-style: none;
+                        margin: 0px  2rem;
+                }
+                nav .left{
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        margin: 0.4rem;
+                }
+
+                .firstsection{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin: 5rem 2rem;
+                }
+
+                .firstsection .btn{
+                        padding: 10px;
+                        font-size: 20px;
+                        color: white;
+                        background-color: #425299;
+                        font-style: normal;
+                        font-weight: bold;
+                        border: solid white;
+                        border-radius: 25px;
+                }
+                .left1 .button{
+                        padding: 30px 0px;
+                }
+
+                .left1{
+                        text-align: center;
+                        width: 50%;
+                        font-size: 3rem;
+                }
+                .right1{
+                        width: 50%;
+                }
+                .right1 img{
+                        width: 100%;
+                        object-fit: contain;
+                       
+                }
+                .purpple{
+                        font-size: 4rem;
+                        color: rgb(132, 77, 184);
+                }
+                nav ul li a{/*notice*/
+                        text-decoration:none;
+                        color:white;
+                }
+                nav ul li a:hover{/*notice*/
+                       color:rgb(192, 178, 219);
+                       font-size:1.04rem; 
+                }
+                #element{
+                        color:rgb(132, 77, 184);
+                }
+                /*second section*/
+                .secondsection{
+                        width: 80vw;
+                        margin: auto;
+                }
+                hr{
+                        border: 0;
+                        background-color: rgb(108, 78, 136);
+                        height: 0.2px;
+                        margin: 40px 70px;
+                }
+                .container{
+                        display: grid;
+                        height: 60vh;
+                        /* width: 80%; */
+                        gap:2rem;
+                        order: 1;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr 1fr ;
+                        margin: 3rem 3rem;
+                        background-color: lightgray
+                        
+
+                }
+                .container img{
+                        width: 100%;
+                        height: 8rem;
+                        object-fit: contain;
+                        padding: 1em;  
+                        /* object-fit: contain;     */
+                }
+                .container div{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;       
+                }
+                .secondsection{
+                        height: 100vh;
+                }
+                .secondsection h1{
+                        font-size: 4rem;
+                        text-align: center;
+                }
+                footer{
+                        
+                        background-color: rgb(14, 14, 37);
+                        height: 40vh;
+                        
+                        /* display:flex;
+                        justify-content: space-between;
+                        align-items: center; */
+                }
+                .footer{
+                        width: 100%;
+                        height: 30vh;
+                        display:flex;
+                        flex-wrap: wrap;
+                        
+                        justify-content: space-around;
+                        align-items: center;
+                }
+                footer .copyright{
+                        display: flex;
+                        justify-content: center;
+                        color: gray;
+                }
+                .humbericon{ 
+                                display: none;
+                                font-size: 30px;
+                                cursor: pointer;  
+                                  
+                }
+                        
+
+                /* Responsive style css*/
+                @media( max-width : 480px){
+                        nav{
+                                width: 100vw;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                height: 80px;
+                                font-size: 0.5rem;
+                                
+                        }
+                        nav .left{
+                                display: flex;
+                                justify-content: start;
+                                /* padding: 1rem;    */
+                        }
+                        nav .right{
+                                display: none;
+                        }
+                        .humbericon{ 
+                                display: block; 
+                                /* padding: 1rem;  */
+                        }
+                        .humbericon:hover{ 
+                                color:rgb(192, 178, 219);
+                                font-size: 31.5px;
+                                cursor: pointer;  
+                                  
+                        }
+                        .firstsection{
+                                display: inline-block;
+                                margin: 2rem 2rem;
+                        
+                        }
+                       .firstsection .left1{
+                                width: 100%;
+                                display: inline-block;
+                        }
+                        .firstsection .right1{
+                                width: 100%;
+                        }
+                        .right1 img{
+                                object-fit: contain;
+                        
+                        }
+                        hr{
+                                margin: 1rem 1rem;
+                        }
+                        .container {
+                                display: grid;
+                                gap: 1rem;
+                                height: 100vh;
+                                grid-template-columns: 1fr 1fr;
+                                grid-template-rows: 1fr 1fr 1fr ;
+                                margin: 2rem;
+                                background-color: lightgray;
+                        }
+                        .container img{
+                                width: 100%;
+                                height: 7rem;
+                                object-fit: contain;
+                        }
+                        footer{
+                                /* flex-direction: column; */
+                                margin-top: 11rem;
+                                height: 100vh;
+                        }
+                        .footer{
+                                width: 100%;
+                                height: 90vh;
+                                display: inline-flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                /* margin:0  25px; */
+                                gap: 1rem;
+                        }
+                        
+
+                        
+                        
+
+                }
+                @media(max-width:768px){
+                        nav{
+                                width: 100vw;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                height: 80px;
+                                font-size: 0.5rem;
+                                
+                        }
+                        nav .left{
+                                display: flex;
+                                justify-content: center;
+                                /* margin: 1rem; */
+                                padding: 1rem;   
+                        }
+                        nav .right{
+                                display: none;
+                        }
+                        .humbericon{ 
+                                display: block; 
+                                padding: 1rem; 
+                        }
+                        .humbericon:hover{ 
+                                color:rgb(192, 178, 219);
+                                font-size: 31.5px;
+                                cursor: pointer;  
+                                  
+                        } 
+                        .firstsection{
+                                display: inline-block;
+                                margin: 2rem 2rem;
+                        
+                        }
+                       .firstsection .left1{
+                                width: 100%;
+                                display: inline-block;
+                        }
+                        .firstsection .right1{
+                                width: 100%;
+                        }
+                        .right1 img{
+                                object-fit: contain;
+                        
+                        }
+                        hr{
+                                margin: 1rem 1rem;
+                        }
+                        .container {
+                                display: grid;
+                                gap: 1rem;
+                                height: 80vh;
+                                grid-template-columns: 1fr 1fr;
+                                grid-template-rows: 1fr 1fr 1fr ;
+                                margin: 2rem;
+                                order: 1;
+                                background-color: lightgray;
+                        }
+                        .container img{
+                                width: 100%;
+                                height: 8rem;
+                                object-fit: contain;
+                        }
+                        footer{
+                                /* flex-direction: column; */
+                                margin-top: 11rem;
+                                height: 100vh;
+                        }
+                        .footer{
+                                width: 100%;
+                                height: 90vh;
+                                display: inline-flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                /* margin:0  25px; */
+                                gap: 1rem;
+                                font-size: 1.5rem;
+
+                        }
+                     
+        }
+
+        </style>
+</head>
+<body>
+        <header>
+                <nav>
+                        <div class="left">Reshmi Porfolio</div>
+                        <div class="humbericon">&#9776;</div>
+
+                        <div class="right">  
+                                
+                                <ul>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/">About</a></li>
+                                        <li><a href="/">Services</a></li>
+                                        <li><a href="/">Projects</a></li>
+                                        <li><a href="/">Contact Me</a></li>
+                                </ul>
+                        </div>
+                </nav>
+        </header>   
+        <main>
+                <section class="firstsection">
+                        <div class="left1">I'm <span class="purpple">Reshmi</span>  
+                                <div>and I am passionate </div>
+                                <span id="element"></span>
+                                <div class="button">
+                                        <button class="btn">Dowload Resume</button>
+                                        <button class="btn">Visit Github</button>
+                                </div>
+                        </div>
+                                
+                        <div class="right1">
+                                <img src="./female-.webp" alt="">
+                        </div>
+                </section>
+
+                <hr>
+                 <section class="secondsection">
+                   <h1>My Skills</h1>
+                   <div class="container">
+                        <div class="first">
+                                <img src="./html.png" alt="">
+                        </div>
+                        <div class="second"><img src="./css.png" alt=""></div>
+                        <div class="third"><img src="./Java.png" alt=""></div>
+                        <div class="fourth"><img src="./React-Logo-PNG-Pic-200x200.png" alt=""></div>
+                        <div class="fivfth"><img src="./Node.js-Logo.wine.png" alt=""></div>
+                        <div class="sixth"><img src="./Docker-Logo.png" alt=""></div>
+
+                   </div>
+                </section>
+
+                <section class="lastsection" >
+                        <footer>
+                                <div class="footer">
+                                        <div class="firstdiv fdiv ">
+                                                <h3>Reshmi's Developer Portfolio</h3>
+                                        </div>
+                                        <div class="seconddiv fdiv ">
+                                                <ul>
+                                                        <li>Home</li>
+                                                        <li>about</li>
+                                                        <li>contact</li>
+                                                        <li>skills</li>
+                                                </ul>
+                                        </div>
+                                        <div class="thirddiv fdiv ">
+                                                <ul></ul>
+                                                        <li>Home</li>
+                                                        <li>about</li>
+                                                        <li>contact</li>
+                                                        <li>skills</li>
+                                                </ul>
+                                        </div>
+                                        <div class="fourthdiv fdiv ">
+                                                <ul></ul>
+                                                        <li>Home</li>
+                                                        <li>about</li>
+                                                        <li>contact</li>
+                                                        <li>skills</li>
+                                                </ul>       
+                                        </div>
+                                        
+
+                                </div>
+                                 <div class="copyright">
+                                        <p>copyright @R</p>
+                                </div> 
+                        </footer>
+                </section> 
+        </main>  
+       
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+        <script>
+                var typed = new Typed('#element', {
+                  strings: ['Full Stack Dev.', 'Graphic Designer','AI Learner'],
+                  typeSpeed: 50,
+                });
+              </script>   
+</body>
+</html>
